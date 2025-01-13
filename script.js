@@ -9,12 +9,10 @@ const startButton = document.getElementById('start-btn');
 const stopButton = document.getElementById('stop-btn');
 const resetButton = document.getElementById('reset-btn');
 
-// Format time as HH:MM:SS
 function formatTime() {
   return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
 }
 
-// Start or resume the stopwatch
 function startStopwatch() {
   running = true;
   startButton.disabled = true;
@@ -37,7 +35,6 @@ function startStopwatch() {
   }, 1000);
 }
 
-// Stop the stopwatch
 function stopStopwatch() {
   running = false;
   clearInterval(timer);
@@ -45,7 +42,6 @@ function stopStopwatch() {
   stopButton.disabled = true;
 }
 
-// Reset the stopwatch
 function resetStopwatch() {
   clearInterval(timer);
   running = false;
