@@ -70,7 +70,6 @@
     outline: none;
   }
   
-  /* Responsive Design */
   @media (max-width: 500px) {
     .stopwatch-container {
       padding: 25px;
